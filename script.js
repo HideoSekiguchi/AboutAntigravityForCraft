@@ -197,5 +197,24 @@ document.addEventListener('DOMContentLoaded', () => {
             updateLanguage(newLang);
         });
     }
+
+    // Mobile Menu Logic
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('.main-nav');
+
+    if (mobileBtn && nav) {
+        mobileBtn.addEventListener('click', () => {
+            mobileBtn.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileBtn.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+    }
 });
 
