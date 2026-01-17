@@ -489,3 +489,57 @@ footer {
         font-weight: 600;
     }
 }
+
+/* Footer Link */
+.footer-link {
+    display: inline-block;
+    margin-top: 24px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.footer-link:hover {
+    border-bottom-color: var(--primary-color);
+    opacity: 0.8;
+}
+
+/* Floating Badge */
+.floating-badge {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    background: rgba(10, 10, 15, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--surface-border);
+    padding: 12px 24px;
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    z-index: 900;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.floating-badge:hover {
+    background: rgba(124, 77, 255, 0.15);
+    border-color: var(--primary-color);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(124, 77, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .floating-badge {
+        bottom: 24px;
+        right: 24px;
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+}
