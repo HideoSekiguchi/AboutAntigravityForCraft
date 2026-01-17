@@ -67,6 +67,7 @@ const translations = {
         "concl.p2": "さあ、怖がらずに始めてみましょう。Antigravityを開いて、最初の一言を打ち込めば、あなたも立派な「クリエイター」です。",
         "footer.copy": "&copy; 2026 Antigravity Guidebook. Based on public information.",
         "footer.disclaimer": "免責事項：このガイドは2026年1月時点の情報を元にしています。",
+        "footer.madeby": "このサイトは Google Antigravity で作成されました。",
         "badge.text": "公式サイト"
     },
     en: {
@@ -137,6 +138,7 @@ const translations = {
         "concl.p2": "Don't be afraid to start. Open Antigravity, type your first word, and you're a 'Creator'.",
         "footer.copy": "&copy; 2026 Antigravity Guidebook. Based on public information.",
         "footer.disclaimer": "Disclaimer: Based on info as of Jan 2026.",
+        "footer.madeby": "This site was built with Google Antigravity.",
         "badge.text": "Official Site"
     }
 };
